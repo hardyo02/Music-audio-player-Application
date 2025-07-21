@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Music</title>
+<link rel="stylesheet" href="./css/style7.css">
+<script src="https://kit.fontawesome.com/14f0fa8566.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+    <div class="music-player">
+        <nav>
+            <div class="circle">
+                <i class="fa-solid fa-angle-left"></i>
+            </div>
+            <div class="circle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
+
+        
+        <img id="songImage" src="" width="200" />
+        <h3 id="songTitle"></h3>
+        <p id="artistName"></p>
+
+        
+        <audio id="audio"></audio>
+        <input type="range" value="0" id="progress" />
+
+        
+        <div class="control">
+            <div onclick="previousSong()"><i class="fa-solid fa-backward"></i></div>
+            <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+            <div onclick="nextSong()"><i class="fa-solid fa-forward"></i></div>
+        </div>
+    </div>
+</div>
+
+<script src="./js/music.js">
+    
+</script>
+</body>
+</html>
